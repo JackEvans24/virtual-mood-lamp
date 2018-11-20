@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager . \"Virtual Mood Lamp\" --overwrite --platform=win32 --icon=icon/icon.ico --prune=true --out=release-builds --version-string.ProductName=\"Virtual Mood Lamp\""
   },
   "author": "Jevans",
   "license": "ISC",
-  "dependencies": {
-    "electron": "^3.0.8"
-  }
+  "devDependencies": {
+    "electron": "^3.0.10"
+  },
+  "dependencies": {}
 }
