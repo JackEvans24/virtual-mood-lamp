@@ -1,0 +1,22 @@
+{
+  "name": "virtual-mood-lamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "electron src/index.js",
+    "build": "electron-packager . virtual-mood-lamp --overwrite --platform=win32 --icon=icon/icon.ico --prune=true --out=release-builds --version-string.ProductName=\"Virtual Mood Lamp\""
+  },
+  "author": "Jevans",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.10",
+    "electron-packager": "^12.2.0"
+  },
+  "dependencies": {},
+  "files": [
+    "*.js",
+    "node_modules",
+    "src"
+  ]
+}
