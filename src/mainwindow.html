@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Dots</title>
-    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <script>
+      if (typeof module === "object") {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
     <script src="jquery-3.3.1.min.js"></script>
-    <script>if (window.module) module = window.module;</script>
-    <link rel="stylesheet" href="mainWindow.css">
-</head>
+    <script>
+      if (window.module) module = window.module;
+    </script>
+    <link rel="stylesheet" href="mainWindow.css" />
+  </head>
 
-<body>
+  <body>
     <div class="menu">
-        <span id="minimise">__</span>
-        <span id="maximise">[ &nbsp;]</span>
-        <span id="close">X</span>
+      <span id="minimise">__</span>
+      <span id="maximise">[ &nbsp;]</span>
+      <span id="close">X</span>
     </div>
     <div class="menu text-menu">
-        <span id="toggle-text">Toggle Text</span>
+      <span id="toggle-text">Toggle Text</span>
+    </div>
+    <div class="menu border-menu">
+      <span id="toggle-border">Toggle Border</span>
     </div>
     <div id="banner-message">
-        <span id="title-text">RANDOM<br />MOOD LAMP</span>
+      <span id="title-text">RANDOM<br />MOOD LAMP</span>
     </div>
     <script type="text/javascript" src="mainWindow.js"></script>
-</body>
-
+  </body>
 </html>
